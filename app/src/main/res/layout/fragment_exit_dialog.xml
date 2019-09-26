@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/exit_dialog_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.manudev.dreamtv.presentation.home.ExitDialogFragment">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/alert_exit_app"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_focusable_selector"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="10dp"
+        android:text="@string/btn_exit"
+        android:textColor="@color/white" />
+
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_focusable_selector"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="10dp"
+        android:text="@string/btn_cancel"
+        android:textColor="@color/white">
+
+        <requestFocus />
+    </Button>
+
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">DreamTV</string>
+    <string name="browse_title"><![CDATA[DreamTV]]></string>
+    <string name="related_movies">Related Videos</string>
+    <string name="categories_view">Categories View</string>
+    <string name="app_preferences">App preferences</string>
+    <string name="video_preferences">Video preferences</string>
+    <string name="watch_trailer_1">Watch trailer</string>
+    <string name="watch_trailer_2">FREE</string>
+    <string name="rent_1">Rent By Day</string>
+    <string name="rent_2">From $1.99</string>
+    <string name="buy_1">Buy and Own</string>
+    <string name="buy_2">AT $9.99</string>
+    <string name="movie">Movie</string>
+
+<!--    EXIT Dialog/-->
+
+    <string name="alert_exit_app">Are you sure you want to leave the application?</string>
+
+    <!-- Error messages -->
+    <string name="error_fragment_message">An error occurred</string>
+    <string name="dismiss_error">Dismiss</string>
+
+    <!--PREFERENCES-->
+    <string name="pref_title_app_settings">Application Settings</string>
+    <string name="pref_title_subtitle_settings">Subtitle Settings</string>
+    <string name="pref_title_video_settings">Video Settings</string>
+    <string name="pref_title_subtitle_size">Text Size</string>
+    <string name="pref_title_app_language_dialog">Select language</string>
+    <string name="pref_title_interface_mode_dialog">Select mode</string>
+    <string name="pref_title_video_duration_dialog">Select video duration</string>
+    <string name="pref_title_subtitle_size_dialog">Select subtitle size</string>
+    <string name="pref_title_audio_language_dialog">Select audio language</string>
+    <string name="pref_title_subtitle_language_dialog">Select subtitle language</string>
+    <string name="pref_title_audio">Audio language</string>
+    <string name="pref_title_subtitle">Subtitles language</string>
+    <string name="pref_title_text_language_settings">Application &amp; Subtitle language</string>
+    <string name="pref_title_reason_dialog_interface_settings">Interface</string>
+    <string name="pref_title_testing_mode_settings">Testing mode</string>
+    <string name="pref_title_testing_mode_settings_description">Display videos for testing</string>
+    <string name="pref_title_video_duration_settings">Video duration</string>
+    <string name="subtitle_not_found_alert">Subtitle not found</string>
+    <string name="subtitle_waiting_response">Waiting for subtitles. Please, try again in a moment.</string>
+    <string name="task_image_content_desc">Image Card corresponding to a video task</string>
+
+    <!--PREFERENCES KEYS-->
+    <string name="pref_key_list_app_languages" translatable="false">listAppLanguage</string>
+    <string name="pref_key_list_interface_mode" translatable="false">listInterfaceMode</string>
+    <string name="pref_key_testing_mode" translatable="false">testingMode</string>
+    <string name="pref_key_list_audio_languages" translatable="false">listAudioLanguage</string>
+    <string name="pref_key_list_subtitle_languages" translatable="false">listSubtitleLanguage</string>
+    <string name="pref_key_video_duration" translatable="false">listVideoDuration</string>
+    <string name="pref_key_subtitle_size" translatable="false">listSubtitleSize</string>
+
+    <!--DATA FOR SETTINGS-->
+    <string-array name="listAudioLanguages">
+        <item>Chinese, Yue</item>
+        <item>English</item>
+        <item>Spanish</item>
+        <item>Arabic</item>
+        <item>French</item>
+        <item>Polish</item>
+        <item>All languages</item>
+    </string-array>
+
+    <string-array name="listAudioLanguagesValues">
+        <item>zh</item>
+        <item>en</item>
+        <item>es</item>
+        <item>ar</item>
+        <item>fr</item>
+        <item>pl</item>
+        <item>NN</item>
+    </string-array>
+
+
+    <string-array name="listSubtitleLanguages">
+        <item>English</item>
+        <item>Polish</item>
+    </string-array>
+
+    <string-array name="listSubtitleLanguagesValues">
+        <item>en</item>
+        <item>pl</item>
+    </string-array>
+
+    <string-array name="listSubtitleSize">
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+    </string-array>
+
+    <string-array name="listSubtitleSizeValues">
+        <item>25</item>
+        <item>30</item>
+        <item>40</item>
+    </string-array>
+
+
+    <string-array name="listAppLanguages">
+        <item>Polish</item>
+        <item>English</item>
+    </string-array>
+
+    <string-array name="listAppLanguagesValues">
+        <item>pl</item>
+        <item>en</item>
+    </string-array>
+
+    <string-array name="listInterfaceMode">
+        <item>Beginner</item>
+        <item>Advanced</item>
+    </string-array>
+
+    <string-array name="listInterfaceModeValues">
+        <item>beginner</item>
+        <item>advanced</item>
+    </string-array>
+
+
+    <string-array name="listVideoDuration">
+        <item>all</item>
+        <item>0 – 5 min</item>
+        <item>5 – 10 min</item>
+        <item>10+ min</item>
+    </string-array>
+
+    <string-array name="listVideoDurationValues">
+        <item>-1</item>
+        <item>0</item>
+        <item>300</item>
+        <item>600</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_exit">Exit</string>
+
+</resources>

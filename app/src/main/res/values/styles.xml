@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="@style/Theme.Leanback" />
+
+<!--    PREFERENCES-->
+    <style name="LeanbackPreferences" parent="Theme.Leanback">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlayCustom</item>
+    </style>
+
+    <style name="PreferenceThemeOverlayCustom" parent="PreferenceThemeOverlay.v14.Leanback">
+        <!-- settings title panel background color -->
+        <item name="android:windowBackground">@color/default_background</item>
+        <item name="android:colorPrimary">@color/color_primary</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+    </style>
+
+<!--    DIALOG-->
+    <style name="DefaultDialogFragmentStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+</resources>

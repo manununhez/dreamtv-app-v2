@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/welcomeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.manudev.dreamtv.presentation.home.HomeFragment"
+        android:label="HomeFragment">
+        <action
+            android:id="@+id/action_homeFragment_to_videoDetailsFragment"
+            app:destination="@id/videoDetailsFragment"
+            app:popUpTo="@+id/homeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment"
+            app:popUpTo="@+id/homeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_appPreferencesActivity"
+            app:destination="@id/appPreferencesActivity"
+            app:popUpTo="@+id/homeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_videoPreferencesActivity"
+            app:destination="@id/videoPreferencesActivity" />
+        <action
+            android:id="@+id/action_homeFragment_to_categoriesFragment"
+            app:destination="@id/categoriesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_exitDialogFragment"
+            app:destination="@id/exitDialogFragment"
+            app:popUpTo="@+id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoDetailsFragment"
+        android:name="com.manudev.dreamtv.presentation.details.VideoDetailsFragment"
+        android:label="VideoDetailsFragment">
+        <argument
+            android:name="movie"
+            app:argType="com.manudev.dreamtv.Movie" />
+        <action
+            android:id="@+id/action_videoDetailsFragment_related_videos"
+            app:destination="@id/videoDetailsFragment"
+            app:popUpTo="@+id/videoDetailsFragment" />
+        <action
+            android:id="@+id/action_videoDetailsFragment_to_playbackVideoFragment"
+            app:destination="@id/playbackVideoFragment"
+            app:popUpTo="@+id/videoDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playbackVideoFragment"
+        android:name="com.manudev.dreamtv.presentation.playvideo.PlaybackVideoFragment"
+        android:label="PlaybackVideoFragment">
+        <argument
+            android:name="movie"
+            app:argType="com.manudev.dreamtv.Movie" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.manudev.dreamtv.presentation.search.SearchFragment"
+        android:label="SearchFragment" />
+    <activity
+        android:id="@+id/appPreferencesActivity"
+        android:name="com.manudev.dreamtv.presentation.preferences.AppPreferencesActivity"
+        android:label="AppPreferencesActivity" />
+    <activity
+        android:id="@+id/videoPreferencesActivity"
+        android:name="com.manudev.dreamtv.presentation.preferences.VideoPreferencesActivity"
+        android:label="VideoPreferencesActivity" />
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.manudev.dreamtv.presentation.categories.CategoriesFragment"
+        android:label="CategoriesFragment" />
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.manudev.dreamtv.presentation.welcome.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/navigation"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <dialog
+        android:id="@+id/exitDialogFragment"
+        android:name="com.manudev.dreamtv.presentation.home.ExitDialogFragment"
+        android:label="fragment_exit_dialog"
+        tools:layout="@layout/fragment_exit_dialog" />
+</navigation>

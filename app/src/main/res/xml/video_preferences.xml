@@ -1,0 +1,40 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/pref_title_video_settings">
+
+    <PreferenceCategory android:title="@string/pref_title_video_settings">
+
+        <ListPreference
+            android:defaultValue="pl"
+            android:dialogTitle="@string/pref_title_audio_language_dialog"
+            android:entries="@array/listAudioLanguages"
+            android:entryValues="@array/listAudioLanguagesValues"
+            android:key="@string/pref_key_list_audio_languages"
+            android:title="@string/pref_title_audio"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            android:defaultValue="-1"
+            android:dialogTitle="@string/pref_title_video_duration_dialog"
+            android:entries="@array/listVideoDuration"
+            android:entryValues="@array/listVideoDurationValues"
+            android:key="@string/pref_key_video_duration"
+            android:title="@string/pref_title_video_duration_settings"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_title_subtitle_settings">
+
+        <ListPreference
+            android:defaultValue="25"
+            android:dialogTitle="@string/pref_title_subtitle_size_dialog"
+            android:entries="@array/listSubtitleSize"
+            android:entryValues="@array/listSubtitleSizeValues"
+            android:key="@string/pref_key_subtitle_size"
+            android:title="@string/pref_title_subtitle_size"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
